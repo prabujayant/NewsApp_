@@ -5,14 +5,14 @@
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News App</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css"> <!-- Ensure the CSS path is correct -->
 </head>
 <body>
 
     <nav>
         <div class="main-nav container flex">
             <a href="#" onclick="reload()" class="company-logo">
-                <img src="logo.png" alt="company logo">
+                <img src="./logo.png" alt="company logo"> <!-- Ensure the logo image path is correct -->
             </a>
             <div class="nav-links">
                 <ul class="flex">
@@ -25,7 +25,7 @@
                     <li class="hover-link nav-item" id="sports" onclick="onNavItemClick('sports')">Sports</li>
                     <li class="hover-link nav-item" id="travel" onclick="onNavItemClick('travel')">Travel</li>
                     <li class="hover-link nav-item" id="food" onclick="onNavItemClick('food')">Food</li>
-                    </ul>
+                </ul>
             </div>
             <div class="search-bar flex">
                 <input id="search-text" type="text" class="news-input" placeholder="e.g. Science">
@@ -34,10 +34,9 @@
         </div>
     </nav>
     
-
     <main>
         <div class="cards-container container flex" id="cards-container">
-            
+            <!-- Cards will be dynamically inserted here -->
         </div>
     </main>
 
@@ -54,7 +53,6 @@
         </div>
     </template>
     
-    <script src="script.js"></script>
+    <script src="./script.js"></script> <!-- Ensure the JS path is correct -->
 </body>
-</html> 
-
+</html>
