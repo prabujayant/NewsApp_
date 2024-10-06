@@ -1,38 +1,45 @@
-# News-App
+# News App
+A simple News Application that fetches and displays the latest news using the News API. Built with HTML, CSS, and JavaScript, this app allows users to browse news articles by different categories such as General, Business, Sports, and Technology.
 
 
-News App
-A simple news application built using HTML, CSS, JavaScript, and News API.
-Table of Contents
-Features
-Displays latest news articles from various sources
-Filtering by categories (e.g., business, entertainment, sports)
-Search functionality for specific news articles
-Responsive design for mobile and desktop devices
-Installation
-Clone the repository: git clone https://github.com/your-username/news-app.git
-Install dependencies: npm install
-Create an account on  and obtain an API key
-Replace YOUR_API_KEY with your actual API key in script.js
-Usage
-Open index.html in a web browser
-Select a category or search for specific news articles
-Click on an article to view its details
-API Documentation
-The News App uses the  to fetch news articles.
-API Endpoint: https://newsapi.org/v2/top-headlines
-API Key: Replace YOUR_API_KEY with your actual API key
-Parameters:
-category: Filter by category (e.g., business, entertainment, sports)
-q: Search query for specific news articles
-Contributing
-Contributions are welcome! Fork the repository, make changes, and submit a pull request.
-License
-This project is licensed under the MIT License.
-Technologies Used
-HTML5
-CSS3
-JavaScript (ES6+)
-News API
-Acknowledgments
- for providing the news data.
+## Table of Contents
+-----------------
+* [Features](#features)
+* [Tech Stack](#tech-stack)
+* [Demo](#demo)
+* [Installation](#installation)
+* [Usage](#usage)
+* [API Reference](#api-reference)
+* [Contributing](#contributing)
+* [License](#license)
+
+
+## Features
+-----------
+
+* Fetches real-time news articles from the News API.
+* Displays articles with titles, descriptions, images, and links to full articles.
+* Category-wise filtering of news (e.g., Business, Sports, Technology).
+* Fully responsive design, working across all device sizes.
+
+
+## Tech Stack
+------------
+
+* Frontend: HTML, CSS, JavaScript
+* API: News API
+
+
+## Demo
+-----
+
+You can check out the live demo of the app here: [Add the link to your deployed project](#).
+
+
+## Installation
+------------
+
+### Prerequisites
+
+* A modern web browser.
+* A valid API key from News API.
