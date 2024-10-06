@@ -6,9 +6,6 @@ A simple News Application that fetches and displays the latest news using the Ne
 -----------------
 * [Features](#features)
 * [Tech Stack](#tech-stack)
-* [Demo](#demo)
-* [Installation](#installation)
-* [Usage](#usage)
 * [API Reference](#api-reference)
 * [Contributing](#contributing)
 * [License](#license)
@@ -29,13 +26,6 @@ A simple News Application that fetches and displays the latest news using the Ne
 * Frontend: HTML, CSS, JavaScript
 * API: News API
 
-
-## Demo
------
-
-You can check out the live demo of the app here: [Add the link to your deployed project](#).
-
-
 ## Installation
 ------------
 
@@ -44,11 +34,8 @@ You can check out the live demo of the app here: [Add the link to your deployed 
 * A modern web browser.
 * A valid API key from News API.
 
-## Steps
-------------
+### License 
+This project is licensed under the MIT License. See the LICENSE file for more details.
 
-### Clone the Repository
 
-```bash
-git clone https://github.com/yourusername/news-app.git
-cd news-app
+
