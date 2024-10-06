@@ -1,49 +1,53 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News App</title>
-    <link rel="stylesheet" href="style.css">  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>samacharsutra</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-   
-   <nav>
+  <nav>
     <div class="main-nav container flex">
-        <a href="#" class="logo-img" onclick="reload()">
-            <img src="Assets/logo.png" alt="logo Img">
-        </a>
-        <div class="nav-links">
-            <ul class="flex">
-               <li class="hover-link nav-item" onclick="onNavItemClick('Ipl')" id="Ipl">IPL</li>
-               <li class="hover-link nav-item"  onclick="onNavItemClick('Finance')" id="Finance">Finance </li>
-               <li class="hover-link nav-item"  onclick="onNavItemClick('Politics')" id="Politics">Politics</li>
-               <li class="hover-link nav-item"  onclick="onNavItemClick('Technology')" id="Technology">Technology</li>
-            </ul>
-        </div>
-        <div class="search-bar flex">
-            <input id="search-text" type="text" class="news-input" placeholder="e.g. Cricket">
-        <button id="search-button" class="search-button">Search</button>
-        </div>
+      <a href="#" onclick="loadWeb()" class="logo.png">
+        <img src="large.png" alt="news logo" />
+      </a>
+      <div class="nav-links">
+        <ul class="flex">
+          <li class="hover-link nav-item" id="Cricket" onclick="clickItem('Cricket')">CRICKET</li>
+          <li class="hover-link nav-item" id="Finance" onclick="clickItem('Finance')">FINANCE</li>
+          <li class="hover-link nav-item" id="Politics" onclick="clickItem('Politics')">POLITICS</li>
+        </ul>
+      </div>
+      <div class="search-bar flex">
+        <input type="text" class="news-input" id="search-txt" placeholder="Enter the text" />
+        <button class="search-btn" id="search-btn">Search</button>
+      </div>
     </div>
-   </nav>
-   <main>
-   <div class="card-container container flex " id="cards-container">
-   </div>
-   </main>
-   <template id="template-news-card">
+  </nav>
+
+  <main>
+    <div class="cards-container container flex" id="cards-container"></div>
+  </main>
+
+  <template id="template-news-card">
     <div class="card">
-        <div class="card-header">
-            <img src="Assets/logo.png" alt="new-imag" id="news-img">
-        </div>
-        <div class="card-content">
-            <h3 id="news-title">This is th article</h3>
-            <h6 class="news-source"  id="news-source">End gadgate 26/08/2023</h6>
-            <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab inventore aperiam facilis sint ipsum quae odit eius, commodi natus laboriosam unde eaque iure.</p>
-        </div>
+      <div class="card-header">
+        <img src="https://via.placeholder.com/400x200" alt="news image" class="news-img" />
+      </div>
+      <div class="card-content">
+        <h3 class="news-title">This is the title</h3>
+        <h6 class="news-source">Source</h6>
+        <p class="news-disc">Description</p>
+      </div>
     </div>
-    </template>
-    <script src="script.js"></script>
+  </template>
+  <a href="#" class="back-top">
+    <img src="arrow2.png" alt="Back to top" />
+  </a>
+  <script src="project.js"></script>
 </body>
 </html>
