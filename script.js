@@ -1,16 +1,30 @@
 const API_KEY = "96b7c00cf97643618848693ddcda71da";
 const url = "https://newsapi.org/v2/everything?q=";
 
-window.addEventListener("load", () => fetchNews("Germany"));
+window.addEventListener("load", () => {
+    fetchNews("Germany");
+});
 
 function reload() {
     window.location.reload();
 }
 
 async function fetchNews(query) {
-    const res = await fetch(`${url}${query}&apiKey=${API_KEY}`);
-    const data = await res.json();
-    bindData(data.articles);
+    try {
+        const res = await fetch(`${url}${query}&apiKey=${API_KEY}`);
+        if (!res.ok) {
+            throw new Error(`Failed to fetch news: ${res.status}`);
+        }
+        const data = await res.json();
+        if (data.articles.length === 0) {
+            alert("No articles found for the given query.");
+            return;
+        }
+        bindData(data.articles);
+    } catch (error) {
+        console.error("Error fetching news:", error);
+        alert("An error occurred while fetching the news.");
+    }
 }
 
 function bindData(articles) {
@@ -67,4 +81,3 @@ searchButton.addEventListener("click", () => {
     curSelectedNav?.classList.remove("active");
     curSelectedNav = null;
 });
-
