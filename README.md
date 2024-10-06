@@ -43,3 +43,12 @@ You can check out the live demo of the app here: [Add the link to your deployed 
 
 * A modern web browser.
 * A valid API key from News API.
+
+## Steps
+------------
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/news-app.git
+cd news-app
