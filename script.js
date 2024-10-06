@@ -1,6 +1,6 @@
 
 
-const apiKey = "pub_49382065c0e1d9ba756262cd97f2478b7830b";
+const apiKey = "96b7c00cf97643618848693ddcda71da";
 const baseUrl = "https://newsdata.io/api/1/news?apiKey=" + apiKey;
 
 window.addEventListener("load", () => fetchNews("India"));
