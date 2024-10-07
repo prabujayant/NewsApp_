@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>News App</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 <body>
   <nav>
@@ -14,6 +15,9 @@
       </a>
       <div class="nav-links">
         <ul class="flex">
+          <li class="hover-link nav-item" id="Health" onclick="clickItem('Health')">HEALTH</li>
+          <li class="hover-link nav-item" id="Education" onclick="clickItem('Education')">EDUCATION</li>
+          <li class="hover-link nav-item" id="Science" onclick="clickItem('Science')">SCIENCE</li>
           <li class="hover-link nav-item" id="Cricket" onclick="clickItem('Cricket')">CRICKET</li>
           <li class="hover-link nav-item" id="Finance" onclick="clickItem('Finance')">FINANCE</li>
           <li class="hover-link nav-item" id="Politics" onclick="clickItem('Politics')">POLITICS</li>
@@ -22,6 +26,12 @@
       <div class="search-bar flex">
         <input type="text" class="news-input" id="search-txt" placeholder="Enter the text" />
         <button class="search-btn" id="search-btn">Search</button>
+      </div>
+      <div class="mode-switch flex">
+        <button class="mode-toggle" id="mode-switch">
+          <i class="fas fa-sun" id="light-mode-icon"></i>
+          <i class="fas fa-moon" id="dark-mode-icon"></i>
+        </button>
       </div>
     </div>
   </nav>
@@ -43,7 +53,7 @@
     </div>
   </template>
   <a href="#" class="back-top">
-    <img src="logo.png" alt="Back to top" />
+    <img src="arrow.png" alt="Back to top" />
   </a>
   <script src="script.js"></script>
 </body>
