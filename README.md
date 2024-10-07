@@ -2,8 +2,6 @@
 
 A fully responsive News Application that fetches and displays real-time news articles using the News API. This app allows users to browse news by categories such as General, Business, Sports, and Technology. Built using HTML, CSS, and JavaScript, the app emphasizes modern web development practices.
 
-**Website:** [News App]([https://news-app.com](https://prabujayant.github.io/NewsApp/))
-
 ## Features
 
 * **Real-time News Fetching:** Integrates with the News API to fetch and display up-to-date news articles.
