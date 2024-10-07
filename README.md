@@ -2,7 +2,7 @@
 
 A fully responsive News Application that fetches and displays real-time news articles using the News API. This app allows users to browse news by categories such as General, Business, Sports, and Technology. Built using HTML, CSS, and JavaScript, the app emphasizes modern web development practices.
 
-**Website:** [News App](https://news-app.com)
+**Website:** [News App]([https://news-app.com](https://prabujayant.github.io/NewsApp/))
 
 ## Features
 
@@ -49,11 +49,33 @@ A fully responsive News Application that fetches and displays real-time news art
 ### Steps
 
 1. Clone the repository:
-```bash
 git clone https://github.com/prabujayant/NewsApp.git
+
+2. Navigate to the project directory:
+cd NewsApp
+Open the index.html file in your web browser.
+
+3. Add your API key in the script.js file at the designated placeholder:
+
+4. API Reference
+This project uses the News API to fetch articles. You'll need an API key to interact with the API.
+Base URL: https://newsapi.org/v2/top-headlines
+Supported Categories: business, sports, technology, general
 
 ### License 
 This project is licensed under the MIT License. See the LICENSE file for more details.
+
+### Contributing
+Contributions are welcome! Please submit a pull request if you'd like to enhance the project.
+
+Fork the repository.
+Create a feature branch (git checkout -b feature-branch).
+Commit your changes (git commit -m 'Add feature').
+Push to the branch (git push origin feature-branch).
+Open a pull request.
+
+### License
+This project is licensed under the MIT License. See the LICENSE file for details.
 
 
 
